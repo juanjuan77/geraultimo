@@ -1,0 +1,63 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5493400664926@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB030E26721022B671778',
+    participant: undefined
+  },
+  messageTimestamp: 1721992847,
+  pushName: 'Juan77',
+  broadcast: false,
+  message: Message {
+    conversation: 'asistente',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'asistente',
+  name: 'Juan77',
+  from: '5493400664926',
+  host: '5493400440772'
+}
+Error en sendProviderAndSave (ID ans_5cca7b6a-21ef-4f73-bdcc-19c70b56c05b): NotFoundError: 404 No assistant found with id 'asst_TMUlf0MCirauKzWZevudNJ9i'.
+    at APIError.generate (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\openai\error.js:54:20)
+    at OpenAI.makeStatusError (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\openai\core.js:275:33)
+    at OpenAI.makeRequest (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\openai\core.js:318:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async retrieveAssistants (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\@builderbot-plugins\openai-assistants\dist\index.cjs:17935:23)
+    at async toAsk (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\@builderbot-plugins\openai-assistants\dist\index.cjs:18004:24)
+    at async Object.ans_08e9e9a4-40d1-4ea5-92f0-915a2f6ec4ed (file:///D:/desarrollos/arioms/botGEra/base-js-baileys-memory/src/app.js:30:27)
+    at async runContext (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\@builderbot\bot\dist\index.cjs:14310:25)
+    at async cbEveryCtx (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\@builderbot\bot\dist\index.cjs:14341:17)
+    at async resolveCbEveryCtx (D:\desarrollos\arioms\botGEra\base-js-baileys-memory\node_modules\@builderbot\bot\dist\index.cjs:14272:33) {
+  status: 404,
+  headers: {
+    'alt-svc': 'h3=":443"; ma=86400',
+    'cf-cache-status': 'DYNAMIC',
+    'cf-ray': '8a9400a69f2d9b26-EZE',
+    connection: 'keep-alive',
+    'content-encoding': 'gzip',
+    'content-type': 'application/json',
+    date: 'Fri, 26 Jul 2024 11:20:48 GMT',
+    'openai-organization': 'user-nh8kvjy52hlil3h1igzzjy7m',
+    'openai-processing-ms': '16',
+    'openai-version': '2020-10-01',
+    server: 'cloudflare',
+    'set-cookie': '__cf_bm=G9VK1HQvLeCj2IWOWWr2cNJZpGSCZt60ol2ykp9.RP4-1721992848-1.0.1.1-1_AJdbsn0RF0ds_jpdH1SFddjxWQk9pLFY6.y1DKwwC23QpeS1ofwBWZGR.JeHFz9CP_daLxmhglawS00DyW6A; path=/; expires=Fri, 26-Jul-24 11:50:48 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=ao8rFOHc1pvZDxQdZ9QWwPyqwVnnL7oFNmT9xJbpZPQ-1721992848614-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains; preload',
+    'transfer-encoding': 'chunked',
+    'x-content-type-options': 'nosniff',
+    'x-request-id': 'req_aa39e8861478fe240c89375e58364af8'
+  },
+  request_id: 'req_aa39e8861478fe240c89375e58364af8',
+  error: {
+    message: "No assistant found with id 'asst_TMUlf0MCirauKzWZevudNJ9i'.",
+    type: 'invalid_request_error',
+    param: null,
+    code: null
+  },
+  code: null,
+  param: null,
+  type: 'invalid_request_error'
+}
